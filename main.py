@@ -1,7 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
-# global variable
+# 輸入腳位
+# 輸出腳位讓大家自己定義
 RIGHT    = 17
 LEFT     = 27
 FORWARD  = 22
@@ -9,15 +10,6 @@ BACKWARD = 5
 UP       = 6
 DOWN     = 13
 RESET    = 19
-
-# look up table
-# input channel : output channel
-lookup = { RIGHT    : 26,
-           LEFT     : 18,
-           FORWARD  : 23,
-           BACKWARD : 24,
-           UP       : 25,
-           DOWN     : 12 }
 
 def init():
   # 大家可以在這邊做三件事情
