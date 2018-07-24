@@ -2,15 +2,21 @@ import RPi.GPIO as GPIO
 import time
 
 # 輸入腳位
-RIGHT    = ?
-LEFT     = ?
-FORWARD  = ?
-BACKWARD = ?
-UP       = ?
-DOWN     = ?
-RESET    = ?
+RIGHT    = -1
+LEFT     = -1
+FORWARD  = -1
+BACKWARD = -1
+UP       = -1
+DOWN     = -1
+RESET    = -1
 
-# 輸出腳位：大家自己定義
+# 輸出腳位
+lookup = { RIGHT    : -1,
+           LEFT     : -1,
+           FORWARD  : -1,
+           BACKWARD : -1,
+           UP       : -1,
+           DOWN     : -1 }
 
 def init():
   # 大家可以在這邊做三件事情
